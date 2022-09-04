@@ -213,19 +213,20 @@ footer{
   color: white;
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:720px){
   h1 {
-     padding: 10px;
+     padding-top: 10px;
   }  
 
 .contenedor-izq {
-    margin: 50px 50px;        
+    margin: 15px 30px;        
 }
 .contenedor-der {
-    margin: 0 0 0 100px;
+    margin: 0 70px;
 }
 footer p{
-  text-align:right
+  text-align:center;
 }
 }
+
 
