@@ -2,8 +2,20 @@ body {
   background:linear-gradient(#609ED4,#052051)
 }
 
-main div{
-  display:inline-block
+main div {
+  display: inline-flex;
+}
+header {
+    display: inline-flex;
+    margin: 20px 0 0 0;
+}
+
+header a{
+    margin: 10px 0 0 80px;
+}
+
+header h1{
+    margin: 0 0 0 60px;
 }
 
 .contenedor-izq {
@@ -11,7 +23,7 @@ main div{
     height: 480px;
     border-radius: 36px;
     border: 1px solid #DDDAC6;
-    margin: 60px 0 0 60px;
+    margin: 30px 0 0 60px;
     background: #F6F5EF;
 }
 
@@ -21,34 +33,20 @@ main div{
     margin: 50px 0 0 50px;
     font-size: 18px;
     color: #737373;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Barlow', sans-serif;
     border-style: none;
     resize: none;
     outline: none;
     background: #F6F5EF;
-    scrollbar-color: #DDDAC6 #e0e0e0;
-    scrollbar-width: thin;
-}
-
-.input-texto::-webkit-scrollbar {
-    width: 8px;
-}
-
-.input-texto::-webkit-scrollbar-track {
-    background-color: #e0e0e0;
-}
-
-.input-texto::-webkit-scrollbar-thumb {
-    background-color: #DDDAC6;
 }
 
 .contenedor-izq p {
     display: inline-block;
     position: absolute;
-    margin: 395px 0 0 155px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    color: #A6A6A6;
+    margin: 395px 0 0 100px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    color: black;
 }
 
 .contenedor-izq button {
@@ -62,20 +60,20 @@ main div{
     margin-left: 80px;
     border-radius: 24px;
     background: #609ED4;
-    border: 1px solid #052051;
+    border: 1px solid lightgrey;
     color: black;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 3px;
+    font-family: 'Barlow', sans-serif;
     cursor: pointer;
 }
 
 .b-encriptar:hover {
-    transform: scale(1.05);
+    transform: scale(1.09);
     box-shadow: 1px 1px 10px #A6A6A6;
+    transition: 0.5s;
 }
 
 .b-encriptar:active {
-    background: #9abaa5;
+    background: #05205159;
 }
 
 .b-desencriptar {
@@ -84,21 +82,20 @@ main div{
     margin-left: 330px;
     border-radius: 24px;
     background: #609ED4;
-    border: 1px solid #052051;
+    border: 1px solid lightgrey;
     color: black;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 3px;
+    font-family: 'Barlow', sans-serif;
     cursor: pointer;
 }
 
 .b-desencriptar:hover {
-    transform: scale(1.05);
+    transform: scale(1.09);
     box-shadow: 1px 1px 10px #A6A6A6;
-    transition: 1s transform;
+    transition: 0.5s;
 }
 
 .b-desencriptar:active {
-    background: #d0cdbb;
+    background: #05205159;
 }
 
 .contenedor-der {
@@ -106,12 +103,13 @@ main div{
     height: 480px;
     border-radius: 36px;
     margin: 0 0 0 75px;
+    background: black;
 }
 
 .contenedor-texto {
     display: inline-block;
     position: absolute;
-    width: 300px;
+    width: 600px;
     margin: 50px 0 0 0;
 }
 
@@ -119,71 +117,38 @@ main div{
     display: none;
     position: relative;
     width: 200px;
-    margin: 0 0 0 50px;
+    margin: 0 0 0 0px;
     border-style: none;
     resize: none;
     outline: none;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    background: none;
-    color: #737373;    
-    scrollbar-color: #A9CEB6 #cbddd2;
-    scrollbar-width: thin;
-}
-
-.output-texto::-webkit-scrollbar {
-    width: 8px;
-}
-
-.output-texto::-webkit-scrollbar-track {
-    background-color: #cbddd2;
-}
-
-.output-texto::-webkit-scrollbar-thumb {
-    background-color: #A9CEB6;
-}
-
-.texto1-contder {
-    display: inline;
-    position: absolute;
-    text-align: center;
-    font-family: 'PT Sans', sans-serif;
-    color: #545454;
+    font-family: 'Barlow', sans-serif;
     font-size: 18px;
-    letter-spacing: 1px;
-    margin: 75px 50px 0 50px;
+    background: none;
+    color: white;    
 }
-
-.texto2-contder {
-    width: 200px;
-    margin: 170px 0 0 50px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    color: #737373;
+.texto-contenedor-der {
+    font-family: 'Barlow', sans-serif;
+    margin: 200px 150px ;
 }
-
 
 .b-copiar {
     position: absolute;
-    margin: 420px 0 0 50px;
+    margin: 420px 0 0 150px;
     width: 200px;
     padding: 10px;
     border-radius: 24px;
     background: #576F6B;
     border: 1px solid #4A605C;
     color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 3px;
-    opacity: 0.88;
+    font-family: 'Barlow', sans-serif;
     cursor: pointer;
 }
 
 .b-copiar:hover {
-    transform: scale(1.05);
+    transform: scale(1.09);
     box-shadow: 1px 1px 10px #A6A6A6;
-    transition: 1s transform;
+    transition: 0.5s;
 }
 
 .b-copiar:active {
@@ -209,24 +174,20 @@ main div{
 footer{
   font-size: 13px;
   text-align:center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Barlow', sans-serif;
   color: white;
+  padding: 30px;
 }
 
 @media screen and (max-width:720px){
-  h1 {
-     padding-top: 10px;
-  }  
-
+  
 .contenedor-izq {
-    margin: 15px 30px;        
+    margin: 40px 35px;        
 }
 .contenedor-der {
-    margin: 0 70px;
+    margin: 0 90px;
 }
 footer p{
   text-align:center;
 }
 }
-
-

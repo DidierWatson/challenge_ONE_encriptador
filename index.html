@@ -8,35 +8,41 @@
         <title>Challenge-Oracle-One:Encriptador</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet"> 
     </head>
 
     <body>
       <header>
-        <h1><a href="https://www.aluracursos.com/"><img src="images/Logo.png" alt="Logo Alura"></a></h1>
+        <a href="https://www.aluracursos.com/"><img src="images/Logo.png" alt="Logo Alura"></a>
       </header>
 
       <main>
         <div class="contenedor-izq">
-          <textarea class="input-texto" cols="30" rows="13" placeholder="Ingrese el texto aqui"></textarea> 
+          <textarea id="input-texto" class="input-texto" cols="30" rows="13" placeholder="Ingrese el texto aqui"></textarea> 
           <p>Solo letras minusculas y sin acentos</p>
-          <button class="b-encriptar">Encriptar</button>
-          <button class="b-desencriptar">Desencriptar</button>
+          <div class="botones">
+            <button class="b-encriptar" onclick="encriptar_o_desencriptar(true)">Encriptar</button>
+            <button class="b-desencriptar" onclick="encriptar_o_desencriptar(false)">Desencriptar</button>
+          </div>
         </div>
         
         <div class="contenedor-der">
           <div class="opacidad-imagen"></div>
-          <textarea class="output-texto" cols="30" rows="18"></textarea>
-          <img class="imagen" src="images/cat_not_found_500x480.png" alt="imagen gato">
+          <div class="contenedor-texto">
+            <textarea id="output-texto" class="output-texto" cols="30" rows="18"></textarea>
+            <p id="texto-contenedor-der" class="texto-contenedor-der">No se encontro ningun mensaje</p>
+          </div>
+          <button class="b-copiar" onclick="copiar()">Copiar</button>
+          <img id="imagen" class="imagen" src="images/cat_not_found_500x480.png" alt="imagen gato">
         </div>
-
-
-
-
       </main>
 
       <footer>
         <p>Developed by Didier Watson | Fueled by Alura</p>
       </footer>
+
+      <script src="script.js"></script>
     </body>
 </html>
