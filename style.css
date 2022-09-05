@@ -116,8 +116,8 @@ header h1{
 .output-texto {
     display: none;
     position: relative;
-    width: 200px;
-    margin: 0 0 0 0px;
+    width: 400px;
+    margin: 0 0 0 50px;
     border-style: none;
     resize: none;
     outline: none;

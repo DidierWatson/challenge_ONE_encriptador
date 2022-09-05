@@ -36,9 +36,13 @@ function encriptar_o_desencriptar(flag) {
 }
 
  function copiar(){
-    mensaje.select();
-    navigator.clipboard.writeText(mensaje.value)
-    mensaje.value = ""
-    alert("Texto copiado")
-
+    var contenido = document.querySelector("#output-texto"); 
+    contenido.select();
+    document.execCommand("copy");
+    alert("Texto copiado");
+  
+    focus();
  }
+
+focus();
+value();
