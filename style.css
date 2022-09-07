@@ -1,5 +1,6 @@
 body {
-  background:linear-gradient(#609ED4,#052051)
+  background:linear-gradient(#609ED4,#052051);
+  height: 100vh;
 }
 
 main div {
