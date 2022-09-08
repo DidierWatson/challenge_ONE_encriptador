@@ -1,6 +1,6 @@
 body {
   background:linear-gradient(#609ED4,#052051);
-  height: 2300px;
+  height: 190vh;
 }
 
 main div {
@@ -194,23 +194,31 @@ footer{
 
 @media screen and (max-width:720px){
 
+    body {
+        height: 190vh;
+       
+    }
+    
 header a{
-    padding: 0 90%;
+    padding: 10px 100%;
 }
 .contenedor-izq {
-    margin: 40px 35px;        
+    display: flex;
+    align-content: center;
+    margin: 10px 40px;
 }
 .contenedor-der {
-    margin: 0 90px;
+    display: flex;
+    margin: 30px 90px;
+    align-content: center;
 }    
+    
 footer{
-    padding: 30px 0 30px 160px;
-       
+       display: flex;
+       width: 100%;
+        margin: 10px 0 0 -325px;
+}   
+
 }
 
-footer p{
-    display: inline-flex;
-    text-align:center;
-}
-}
 
