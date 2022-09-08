@@ -138,8 +138,8 @@ header h1{
     width: 200px;
     padding: 10px;
     border-radius: 24px;
-    background: #576F6B;
-    border: 1px solid #4A605C;
+    background: grey;
+    border: 1px solid grey;
     color: #ffffff;
     font-family: 'Barlow', sans-serif;
     cursor: pointer;
